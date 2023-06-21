@@ -19,7 +19,7 @@
       body {background-color: hsl(257, 40%, 49%);font-weight: 400;}
     /* Styles spécifiques pour les petits écrans */
       
-      @media (max-width: 768px) {
+      @media (max-width: 992px) {
         body {
           background-image: url(images/bg-mobile.svg);
           background-repeat: no-repeat;
@@ -27,7 +27,7 @@
           background-position: center;
         }
       }
-      @media (min-width: 769px) {
+      @media (min-width: 993px) {
         body {
           background-image: url(images/bg-desktop.svg);
           background-repeat: no-repeat;
@@ -42,27 +42,32 @@
       p {
         font-family: 'Open Sans', sans-serif;
       }
-      .sticky-footer {
-        position: fixed;
-        bottom: 0;
-        left: 0;
-        width: 100%;
+      @media (min-width: 1024px) {
+        body {
+          .sticky-footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+          }
+        }
       }
+      
     </style>
 </head>
 <body>
 
-  <header class="mt-5">
+  <header class="mt-4">
     <nav class="navbar navbar-expand-lg navbar-light ">
       <div class="container">
         <a class="navbar-brand" href="#">
-          <img src="images/logo.svg" alt="logo Huddle" class="w-30 px-3" height="70px">
+          <img src="images/logo.svg" alt="logo Huddle" class="w-30 px-3" height="40rem">
         </a>
       </div>
     </nav>
   </header>
   <main>
-    <section class="py-3 mt-5">
+    <section class="py-3 mt-4">
       <div class="container">
         <div class="row gx-lg-5 justify-content-center" >
           <div class="col-12 col-lg-7">
@@ -73,7 +78,7 @@
           <div class="col-12 col-lg-5 text-light py-5 text-center text-lg-start">
             <h1 class="fw-bold fs-2">Build The Community</h1>
             <h1 class="fw-bold fs-2">Your Fans Will Love</h1>
-            <p class="fw-light mt-4 fs-6">Huddle re-imagines the way we build communities. You have a voice, but so does your audience. Create connections with your users as you engage in genuine discussion.</p>
+            <p class="fw-light mt-4">Huddle re-imagines the way we build communities. You have a voice, but so does your audience. Create connections with your users as you engage in genuine discussion.</p>
             <a href="#" role="button" class="text-decoration-none btn btn-outline-light rounded-pill bg-light p-lg-2 px-lg-5 p-2 w-75" style="color: hsl(257, 40%, 49%)">Register</a>
           </div>
         </div>
@@ -81,7 +86,7 @@
     </section>
 
   </main>
-  <footer class="mt-5">
+  <footer class="mt-2 mt-md-3  sticky-footer">
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-12 col-lg-5 offset-lg-2 text-center order-2 order-lg-1">
@@ -94,14 +99,14 @@
         <div class="col-6 col-lg-3 offset-1  offset-lg-2 order-1 order-lg-2">
           <ul class="list-inline mb-lg-0">
             <li class="list-inline-item">
-                <a href="#" target="_blank" class="text-light text-decoration-none btn btn-outline-light rounded-circle"><i class="bi bi-facebook fa-1x"></i></a>
-            </li>
+              <a href="#" target="_blank" class="text-light text-decoration-none btn btn-outline-light rounded-circle"><i class="bi bi-facebook fa-1x"></i></a>
+          </li>
             <li class="list-inline-item">
                 <a href="#" target="_blank" class="text-light text-decoration-none btn btn-outline-light rounded-circle"><i class="bi bi-twitter fa-1x"></i></a>
             </li>
             <li class="list-inline-item">
-                <a href="#" target="_blank" class="text-light text-decoration-none btn btn-outline-light rounded-circle"><i class="bi bi-instagram"></i></a>
-            </li>
+              <a href="#" target="_blank" class="text-light text-decoration-none btn btn-outline-light rounded-circle"><i class="bi bi-instagram fa-1x"></i></a>
+          </li>
           </ul>
         </div>  
       </div>
