@@ -1,0 +1,73 @@
+body {
+    background-color: hsl(257, 40%, 49%);
+    font-weight: 400;
+}
+    
+    /* Styles pour les differents types de d'ecrans */
+      
+@media (max-width: 992px) {
+body {
+    background-image: url(images/bg-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+}
+@media (min-width: 993px) {
+body {
+    background-image: url(images/bg-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+}
+
+@media (min-width: 1024px) {
+    body {
+        .sticky-footer {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        }
+    }
+}
+
+    /*Styles des titres et Fonts*/
+h1, h2, h3 {
+    font-family: 'Poppins', sans-serif;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+}
+
+    /*Styles des bouttons*/
+.btns {
+color: hsl(257, 40%, 49%);
+text-decoration: none;
+border-color: white;
+color: #ffffff; 
+}
+.btns:active, .btns:hover{
+    border-color: hsl(300, 69%, 71%);
+    background-color: hsl(257, 40%, 49%);
+    color: hsl(300, 69%, 71%);
+}
+.btn-lg {
+    background-color: white;
+    color: hsl(257, 40%, 49%);
+}
+.btn-lg:active, .btn-lg:hover {
+    background-color: hsl(300, 69%, 71%);   
+    color: white;
+}
+
+    /*Attribution*/
+.attribution {
+    color: white;
+}
+
+.attribution:hover, .attribution:active {
+    color: hsl(300, 69%, 71%);
+}
